@@ -1,1 +1,23 @@
-aiueo
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>inuReact</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin>
+        </script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <h1>Reactinu</h1>
+    <div id="root">wait...</div>
+    <script>
+    // 計画する
+    let dom = document.querySelector('#root');
+    let element = React.createElement(
+        'p', {}, 'Hello React!'
+    );
+    // 実行する
+    ReactDOM.render(element, dom);
+    </script>
+</body>
+</html>
