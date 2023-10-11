@@ -15,21 +15,24 @@
     <script type="text/babel">
     let dom = document.querySelector('#root');
 
-    let message = "かわいい";
-
-    const msg_s = {
-        fontSize:"40ç√pt",
-        color:"red",
-        border:"1px solid blue"
+    const p = {
+        fontSize: "20pt",
+        padding: "10px",
     }
     
-    let el = (
-        <div>
-            <p style={msg_s}>{message}</p>
-        </div>
-    );
+        
+    let counter = 0;
+
+    setInterval(()=> {
+        counter++;
+        let el = (
+            <div>
+                <p style={p}>count: {counter}</p>
+                </div>
+        );
     
     ReactDOM.render(el, dom);
+            }, 500);
     </script>
 </body>
 </html>
